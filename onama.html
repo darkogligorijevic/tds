@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nama - ThermoDynamicSystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF9800 0%, #F57C00 50%, #D32F2F 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF9800 0%, #F57C00 50%, #D32F2F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html"><span class="text-2xl font-bold text-gradient">TDS</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Početna</a>
+                    <a href="resenja.html" class="text-gray-600 hover:text-gray-900">Rešenja</a>
+                    <a href="radovi.html" class="text-gray-600 hover:text-gray-900">Radovi</a>
+                    <a href="proces.html" class="text-gray-600 hover:text-gray-900">Proces</a>
+                    <a href="onama.html" class="text-gray-900 font-medium">O nama</a>
+                    <a href="kontakt.html" class="text-gray-600 hover:text-gray-900">Kontakt</a>
+                </div>
+                <a href="kontakt.html" class="hidden md:block gradient-primary text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition">
+                    Besplatno merenje
+                </a>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-600">Početna</a>
+                <a href="resenja.html" class="block text-gray-600">Rešenja</a>
+                <a href="radovi.html" class="block text-gray-600">Radovi</a>
+                <a href="proces.html" class="block text-gray-600">Proces</a>
+                <a href="onama.html" class="block text-gray-900 font-medium">O nama</a>
+                <a href="kontakt.html" class="block text-gray-600">Kontakt</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative bg-gray-50 py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        O nama
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Lokalna firma sa dugogodišnjim iskustvom u izradi i ugradnji kvalitetne PVC i ALU stolarije u Leskovcu i okolini.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Ko smo mi</h2>
+                        <p class="text-gray-600 text-lg mb-4">
+                            ThermoDynamicSystem je firma koja se bavi profesionalnom izradom i ugradnjom PVC i ALU stolarije. Naša misija je da svakom klijentu obezbedimo kvalitetne proizvode, pouzdanu uslugu i potpunu transparentnost tokom celog procesa.
+                        </p>
+                        <p class="text-gray-600 text-lg mb-4">
+                            Radimo sa renomiranim proizvođačima profila i opreme, što nam omogućava da garantujemo vrhunski kvalitet svakog elementa koji proizvodimo. Naš tim čine iskusni majstori koji svoj posao rade sa pažnjom prema detaljima.
+                        </p>
+                        <p class="text-gray-600 text-lg">
+                            Ponosni smo na to što gradimo dugoročne odnose sa našim klijentima zasnovane na poverenju i zadovoljstvu pruženom uslugom.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="/images/about-team.jpg" alt="Naš tim" class="w-full h-96 object-cover rounded-lg shadow-lg bg-gray-200">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Naše vrednosti</h2>
+                    <p class="text-xl text-gray-600">Principi po kojima radimo</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg p-8 shadow-sm">
+                        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Kvalitet</h3>
+                        <p class="text-gray-600 text-center">
+                            Koristimo samo sertifikovane materijale i profile renomiranih proizvođača. Svaki element prolazi kontrolu kvaliteta pre isporuke.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-sm">
+                        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Preciznost</h3>
+                        <p class="text-gray-600 text-center">
+                            Svaka mera je važna. Precizno merenje i proizvodnja obezbeđuju savršeno prianjanje i dugotrajnost stolarije.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-sm">
+                        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Dogovor</h3>
+                        <p class="text-gray-600 text-center">
+                            Kada se dogovorimo, držimo se toga. Rokovi, cene i dogovori su za nas obaveza prema klijentu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Zašto klijenti biraju nas</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold mb-2">Lokalna dostupnost</h3>
+                                <p class="text-gray-600">
+                                    Nalazimo se u Leskovcu i pokrivamo celu okolinu. Brzo stižemo na teren, dostupni smo za hitne intervencije i lako nas možete kontaktirati.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold mb-2">Transparentne cene</h3>
+                                <p class="text-gray-600">
+                                    Ponude su jasne i detaljne. Sve što je uključeno u cenu je navedeno u ponudi. Nema skrivenih troškova ili iznenađenja.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold mb-2">Kompletna usluga</h3>
+                                <p class="text-gray-600">
+                                    Od besplatnog merenja do konačne ugradnje i čišćenja. Preuzimamo stare elemente, završavamo sve radove i čistimo za sobom.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold mb-2">Garancija i podrška</h3>
+                                <p class="text-gray-600">
+                                    Svi proizvodi dolaze sa garancijom. Ostajemo dostupni i nakon ugradnje za sva pitanja, podešavanja ili servise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold mb-2">Dugogodišnje iskustvo</h3>
+                                <p class="text-gray-600">
+                                    Naš tim ima dugogodišnje iskustvo u proizvodnji i ugradnji stolarije. Znamo kako da rešimo bilo koji izazov koji se pojavi na terenu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Započnite projekat sa nama</h2>
+                    <p class="text-xl text-gray-600">Kontaktirajte nas i dobićete profesionalnu podršku od prvog kontakta</p>
+                </div>
+                <div class="bg-white rounded-lg p-8 lg:p-12 shadow-lg text-center">
+                    <p class="text-lg text-gray-600 mb-8">
+                        Bilo da renovirate stan, gradite novu kuću ili vam treba stolarija za poslovni objekat, tu smo da vam pomognemo. Besplatno merenje i ponuda su prvi korak.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="kontakt.html" class="gradient-primary text-white px-8 py-4 rounded-lg font-medium hover:opacity-90 transition">
+                            Zakažite merenje
+                        </a>
+                        <a href="radovi.html" class="bg-white text-gray-900 border-2 border-gray-200 px-8 py-4 rounded-lg font-medium hover:border-gray-300 transition">
+                            Pogledajte radove
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-gradient mb-4">TDS</h3>
+                    <p class="text-gray-400">ThermoDynamicSystem</p>
+                    <p class="text-gray-400">Leskovac, Srbija</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navigacija</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Početna</a></li>
+                        <li><a href="resenja.html" class="text-gray-400 hover:text-white">Rešenja</a></li>
+                        <li><a href="radovi.html" class="text-gray-400 hover:text-white">Radovi</a></li>
+                        <li><a href="proces.html" class="text-gray-400 hover:text-white">Proces</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Rešenja</h4>
+                    <ul class="space-y-2">
+                        <li><a href="pvc.html" class="text-gray-400 hover:text-white">PVC stolarija</a></li>
+                        <li><a href="alu.html" class="text-gray-400 hover:text-white">ALU stolarija</a></li>
+                        <li><a href="resenja.html" class="text-gray-400 hover:text-white">Klizni sistemi</a></li>
+                        <li><a href="resenja.html" class="text-gray-400 hover:text-white">Roletne</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Tel: <a href="tel:+381123456789" class="hover:text-white">+381 12 345 6789</a></li>
+                        <li>Email: <a href="mailto:info@tds.rs" class="hover:text-white">info@tds.rs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ThermoDynamicSystem. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobileCtaBar" class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40">
+        <div class="grid grid-cols-3 gap-2 p-3">
+            <a href="tel:+381123456789" class="flex flex-col items-center justify-center py-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
+                <svg class="w-6 h-6 text-orange-500 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span class="text-xs font-medium">Pozovi</span>
+            </a>
+            <a href="viber://chat?number=+381123456789" class="flex flex-col items-center justify-center py-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
+                <svg class="w-6 h-6 text-orange-500 mb-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817.57 12.933.488 18.617 6.55 20.445h.005l-.004 2.84s-.037.977.61 1.177c.777.242 1.234-.5 1.98-1.302.407-.44.97-1.084 1.397-1.58 3.85.323 6.812-.417 7.15-.526.776-.253 5.176-.816 5.892-6.657.74-6.02-.36-9.83-2.34-11.546-.596-.55-3.006-2.3-8.375-2.323 0 0-.395-.025-1.037-.017z"></path>
+                </svg>
+                <span class="text-xs font-medium">Viber</span>
+            </a>
+            <a href="https://wa.me/381123456789" class="flex flex-col items-center justify-center py-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
+                <svg class="w-6 h-6 text-orange-500 mb-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+                </svg>
+                <span class="text-xs font-medium">WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

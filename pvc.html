@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVC stolarija - ThermoDynamicSystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF9800 0%, #F57C00 50%, #D32F2F 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF9800 0%, #F57C00 50%, #D32F2F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html"><span class="text-2xl font-bold text-gradient">TDS</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Početna</a>
+                    <a href="resenja.html" class="text-gray-900 font-medium">Rešenja</a>
+                    <a href="radovi.html" class="text-gray-600 hover:text-gray-900">Radovi</a>
+                    <a href="proces.html" class="text-gray-600 hover:text-gray-900">Proces</a>
+                    <a href="onama.html" class="text-gray-600 hover:text-gray-900">O nama</a>
+                    <a href="kontakt.html" class="text-gray-600 hover:text-gray-900">Kontakt</a>
+                </div>
+                <a href="kontakt.html" class="hidden md:block gradient-primary text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition">
+                    Besplatno merenje
+                </a>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-600">Početna</a>
+                <a href="resenja.html" class="block text-gray-900 font-medium">Rešenja</a>
+                <a href="radovi.html" class="block text-gray-600">Radovi</a>
+                <a href="proces.html" class="block text-gray-600">Proces</a>
+                <a href="onama.html" class="block text-gray-600">O nama</a>
+                <a href="kontakt.html" class="block text-gray-600">Kontakt</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative bg-gray-50 py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        PVC stolarija
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Energetski efikasna i jednostavna za održavanje. Idealno rešenje za stambene objekte gde su kvalitet i dugotrajnost prioritet.
+                    </p>
+                    <a href="#ponuda" class="gradient-primary text-white px-8 py-4 rounded-lg font-medium inline-block hover:opacity-90 transition">
+                        Zatraži ponudu
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <img src="/images/pvc1.jpg" alt="PVC prozori" class="w-full h-80 object-cover rounded-lg bg-gray-200">
+                    <img src="/images/pvc2.jpg" alt="PVC vrata" class="w-full h-80 object-cover rounded-lg bg-gray-200">
+                    <img src="/images/pvc3.jpg" alt="PVC detalj" class="w-full h-80 object-cover rounded-lg bg-gray-200">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Zašto izabrati PVC stolariju?</h2>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 flex-shrink-0 rounded-full bg-white flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Odlična termo izolacija</h3>
+                                    <p class="text-gray-600">Višekomorni PVC profili i višeslojna stakla obezbeđuju maksimalnu energetsku efikasnost i smanjuju troškove grejanja.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 flex-shrink-0 rounded-full bg-white flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Zvučna izolacija</h3>
+                                    <p class="text-gray-600">PVC prozori značajno smanjuju buku sa ulice, čineći vaš dom tihnijim i prijatnijim mestom za život.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 flex-shrink-0 rounded-full bg-white flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Jednostavno održavanje</h3>
+                                    <p class="text-gray-600">Dovoljno je povremeno brisanje vlažnom krpom. PVC ne zahteva farbanje niti poseban tretman.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 flex-shrink-0 rounded-full bg-white flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Dugotrajnost</h3>
+                                    <p class="text-gray-600">Kvalitetna PVC stolarija traje decenijama bez gubitka funkcionalnosti ili estetskog izgleda.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 flex-shrink-0 rounded-full bg-white flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Različite boje i oblici</h3>
+                                    <p class="text-gray-600">Dostupno u beloj boji ili dekoru po želji. Moguće su razne kombinacije sa roletama i komarnicima.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-lg p-8 shadow-lg sticky top-24">
+                            <h3 class="text-2xl font-bold mb-4">Šta nudimo:</h3>
+                            <ul class="space-y-3 mb-6 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>PVC prozori (jednokrilni, dvokrilni, trodelni)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>PVC balkonska vrata</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>PVC ulazna vrata</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>Klizni PVC sistemi</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>Fiksna stakla (fix sistemi)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>Roletne i komarnici</span>
+                                </li>
+                            </ul>
+                            <div class="border-t pt-6">
+                                <p class="text-sm text-gray-600 mb-4">Koristimo profil renomiranih proizvođača sa dokazanim kvalitetom.</p>
+                                <a href="#ponuda" class="block w-full text-center bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition">
+                                    Zatraži ponudu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <img src="/images/pvc4.jpg" alt="PVC primer 1" class="w-full h-80 object-cover rounded-lg bg-gray-200">
+                    <img src="/images/pvc5.jpg" alt="PVC primer 2" class="w-full h-80 object-cover rounded-lg bg-gray-200">
+                    <img src="/images/pvc6.jpg" alt="PVC primer 3" class="w-full h-80 object-cover rounded-lg bg-gray-200">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-24 bg-gray-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Često postavljana pitanja</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg">
+                        <button class="faq-btn w-full px-6 py-4 text-left font-medium flex justify-between items-center hover:bg-gray-50">
+                            <span>Koliko su PVC prozori efikasniji od starih drvenih?</span>
+                            <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>PVC prozori sa višekomornim profilima i kvalitetnim staklima mogu smanjiti gubitke toplote i do 70% u poređenju sa starim drvenim prozorima. Razlika u računima za grejanje je očigledna već prve zime.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg">
+                        <button class="faq-btn w-full px-6 py-4 text-left font-medium flex justify-between items-center hover:bg-gray-50">
+                            <span>Koja je razlika između 5-komornog i 7-komornog profila?</span>
+                            <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Veći broj komora znači bolju termo izolaciju. Za standardne stambene objekte 5-komorni profil je sasvim dovoljan. 7-komorni se preporučuje za pasivne kuće ili gde želite maksimalnu energetsku efikasnost.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg">
+                        <button class="faq-btn w-full px-6 py-4 text-left font-medium flex justify-between items-center hover:bg-gray-50">
+                            <span>Da li mogu da dobijem PVC u drugoj boji osim bele?</span>
+                            <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Da, PVC profili su dostupni u raznim dekorima koji imitiraju drvo (hrast, orah, mahagonij) kao i u jednobojnim varijantama (antracit, braon). Možete kombinovati bele profile sa unutrašnje strane i dekor sa spoljašnje.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg">
+                        <button class="faq-btn w-full px-6 py-4 text-left font-medium flex justify-between items-center hover:bg-gray-50">
+                            <span>Koliko traje zamena prozora?</span>
+                            <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Za standardan stan ugradnja se obavlja za 1 dan. Uklanjamo stare prozore, ugrađujemo nove i čistimo za sobom. Proizvodnja traje oko 2 nedelje od potvrde narudžbine.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg">
+                        <button class="faq-btn w-full px-6 py-4 text-left font-medium flex justify-between items-center hover:bg-gray-50">
+                            <span>Koja vrsta stakla je najbolja?</span>
+                            <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Za stambene objekte preporučujemo dvoslojno ili troslojno low-e staklo sa argon punjenjem. Ovo staklo ima odličnu termo izolaciju i reflektuje toplotu nazad u prostoriju. Za prizemlje ili rizične lokacije možemo ugraditi i ojačano sigurnosno staklo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ponuda" class="py-16 lg:py-24">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Zatraži ponudu za PVC stolariju</h2>
+                    <p class="text-xl text-gray-600">Javite nam se i dobićete preciznu ponudu prilagođenu vašim potrebama</p>
+                </div>
+                <form class="bg-gray-50 rounded-lg p-8 space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Ime i prezime</label>
+                        <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Telefon</label>
+                        <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email (opciono)</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Šta vas interesuje?</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500">
+                            <option>PVC prozori</option>
+                            <option>PVC balkonska vrata</option>
+                            <option>PVC ulazna vrata</option>
+                            <option>Klizni PVC sistemi</option>
+                            <option>Kombinacija više elemenata</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Dodatne informacije (opciono)</label>
+                        <textarea rows="4" placeholder="Napišite nam ukratko o projektu, dimenzijama ili posebnim zahtevima" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full gradient-primary text-white px-8 py-4 rounded-lg font-medium hover:opacity-90 transition">
+                        Pošalji upit
+                    </button>
+                    <p class="text-sm text-gray-500 text-center">
+                        Merenje na terenu je potpuno besplatno i ni na šta vas ne obavezuje.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-gradient mb-4">TDS</h3>
+                    <p class="text-gray-400">ThermoDynamicSystem</p>
+                    <p class="text-gray-400">Leskovac, Srbija</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navigacija</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Početna</a></li>
+                        <li><a href="resenja.html" class="text-gray-400 hover:text-white">Rešenja</a></li>
+                        <li><a href="radovi.html" class="text-gray-400 hover:text-white">Radovi</a></li>
+                        <li><a href="proces.html" class="text-gray-400 hover:text-white">Proces</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Rešenja</h4>
+                    <ul class="space-y-2">
+                        <li><a href="pvc.html" class="text-gray-400 hover:text-white">PVC stolarija</a></li>
+                        <li><a href="alu.html" class="text-gray-400 hover:text-white">ALU stolarija</a></li>
+                        <li><a href="resenja.html" class="text-gray-400 hover:text-white">Klizni sistemi</a></li>
+                        <li><a href="resenja.html" class="text-gray-400 hover:text-white">Roletne</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Tel: <a href="tel:+381123456789" class="hover:text-white">+381 12 345 6789</a></li>
+                        <li>Email: <a href="mailto:info@tds.rs" class="hover:text-white">info@tds.rs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ThermoDynamicSystem. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
